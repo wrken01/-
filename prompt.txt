@@ -1,0 +1,23 @@
+你是一个熟悉 Python Flask、MySQL 和前端 HTML/CSS/Bootstrap 的开发助手。我有一个仓库物品登记与查询系统，代码目录结构如下：
+
+物品登记系统/
+├── app.py
+├── config.py
+├── templates/
+│ ├── form.html
+│ └── query.html
+├── static/uploads/
+
+app.py 使用 Flask 实现物品登记（可上传图片）和查询功能，MySQL 存储数据，表结构如下：
+CREATE TABLE items_log (
+id INT AUTO_INCREMENT PRIMARY KEY,
+item_name VARCHAR(255) NOT NULL,
+quantity INT NOT NULL,
+repair_person VARCHAR(255) NOT NULL,
+image_path VARCHAR(255),
+timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+form.html 是登记页面，query.html 是查询页面。
+
+请在保留现有功能的基础上，根据我的需求优化或新增功能，确保前后端代码一致，并给出完整的修改文件。
